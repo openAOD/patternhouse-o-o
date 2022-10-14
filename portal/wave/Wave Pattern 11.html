@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wave Pattern 11 | PatternHouse DB</title>
+    <link rel="stylesheet" href="../../css/prism.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/code_display.css">
+    <link rel="stylesheet" href="../../css/nav_display.css">
+</head>
+
+<header id="top">
+    <div class="container">
+        <div class="left">
+            <div class="logo">PatternHouse Database</div>
+        </div>
+        <div class="right">
+            <a href="https://patternhouse.openaod.org/portal/"><div>PatternHouse DB</div></a>
+            <a href="https://patternhouse.openaod.org"><div>PatternHouse Website</div></a>
+            <a href="https://openaod.org"><div>openAOD</div></a>
+            <a href="https://openaod.org/about"><div>About</div></a>
+        </div>
+        <div class="right-mobile">
+            <div class="img"><img src="../../img/hamburger.svg" alt="left_arrow"/></div>
+        </div>
+    </div>
+</header>
+
+<div class="main-container">
+
+    <section class="left">
+
+        <div class="top">
+            <div class="header">
+                <div class="heading">Navigator</div>
+            </div>
+            <div class="showcase">
+                <img src="../../patterns/wave/wavepattern11.jpg" alt="pattern_image">
+            </div>
+            <div class="description">
+                Pattern Name: Wave Pattern 11 <br>
+                Group Name: Wave Patterns
+            </div>
+            <div class="spacer"></div>
+            <div class="badges-container">
+                <a href="#c"><div class="active ">C</div></a>
+                <a href="#cpp"><div class="active ">C++</div></a>
+                <a href="#cs"><div class="active inactive">C#</div></a>
+                <a href="#java"><div class="active inactive">Java</div></a>
+                <a href="#py"><div class="active ">Python</div></a>
+            </div>
+            <div class="navigation">
+                <a href="Wave Pattern 10.html">
+                    <div class="left ">
+                        <div class="icon"><img src="../../img/left-nav.svg" alt="left_icon"></div>
+                        <div class="text">
+                            <div class="head">Last Pattern</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Wave Pattern 12.html">
+                    <div class="right ">
+                        <div class="text">
+                            <div class="head">Next Pattern</div>
+                        </div>
+                        <div class="icon"><img src="../../img/right-nav.svg" alt="left_icon"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="head">Debug Info</div>
+            <div class="text">
+                Build ID: openAOD FIRE v1.2 Final Release Candidate <br>
+                Build Date: 2022-10-14 <br>
+                Fire Version: openaod-fire-v1.2frc
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="right">
+        <div class="h1">Wave Pattern 11</div>
+
+        <div class="h2" id="c">C</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>wavepattern11.c</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/C-PatternHouse/blob/main/Wave Patterns/wavepattern11.c">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/C-PatternHouse/raw/main/Wave Patterns/wavepattern11.c" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main() 
+{
+    int height = 4, length = 4;
+    int x = height - 1;
+    for(int i = 0; i &lt;= height; i++) {
+        for(int j = 0; j &lt; height*length*2; j++) {
+            if(j % (height*2) == x || j % (height*2) == height + i)
+                printf("%02d ", j+1);
+            else
+                printf(" ");
+        }
+        x--;
+        printf("\n");
+    }
+    return 0;
+}
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2" id="cpp">C++</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>wavepattern11.cpp</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/CPlusPlus-PatternHouse/blob/main/Wave Patterns/wavepattern11.cpp">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/CPlusPlus-PatternHouse/raw/main/Wave Patterns/wavepattern11.cpp" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-cpp">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() 
+{
+    int height = 4, length = 4;
+    int x = height - 1;
+    for(int i = 0; i &lt;= height; i++) {
+        for(int j = 0; j &lt; height*length*2; j++) {
+            if(j % (height*2) == x || j % (height*2) == height + i){
+                if(j &lt; 9)
+                    cout &lt;&lt; "0" &lt;&lt; j+1 &lt;&lt; " ";
+                else
+                    cout &lt;&lt; j+1 &lt;&lt; " ";
+            }
+            else
+                cout &lt;&lt; " ";
+        }
+        x--;
+        cout &lt;&lt; endl;
+    }
+    return 0;
+}
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2" id="py">Python</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>wavepattern11.py</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/Python-PatternHouse/blob/main/Wave Patterns/wavepattern11.py">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/Python-PatternHouse/raw/main/Wave Patterns/wavepattern11.py" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-py">
+wH = 4  # 1
+wL = 4  # 2
+pc = wH - 1  # 3
+
+for x in range(0, wH + 1):
+    for y in range(0, (wH * wL * 2)):
+        if (y % (wH * 2) == pc or
+                y % (wH * 2) == wH + x):
+            print("{:02d}".format(y), end="")
+        else:
+            print("  ", end="")  # single space
+    pc -= 1
+    print()
+
+    """
+1) change value to increase/decrease the height of the wave
+2) change value to increase/decrease the length of the wave
+3) cond for printing
+    """
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info ">
+            <div class="icon"><img src="../../img/info-icon.svg" alt="info_icon"></div>
+            <div class="text">We are currently awaiting contributions for this pattern for the language(s): C# Java. <br> Please visit our GitHub page if you would like to contribute.</div>
+        </div>
+
+        <a href="#top"><div class="bottom-nav"> Back to Top </div></a>
+    </section>
+
+</div>
+
+<script src="../../js/prism.js"></script>
+
+<footer>
+    <div class="container">
+        <div class="left">
+            <div class="heading">PatternHouse Database</div>
+            <div class="description">Copyright &copy 2022, openAOD</div>
+        </div>
+        <div class="right">
+            <a href="https://vercel.com/?utm_source=openaod"><div class="sponsor-note">Powered by Vercel</div></a>
+        </div>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Numeric Pattern 277 | PatternHouse DB</title>
+    <link rel="stylesheet" href="../../css/prism.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/code_display.css">
+    <link rel="stylesheet" href="../../css/nav_display.css">
+</head>
+
+<header id="top">
+    <div class="container">
+        <div class="left">
+            <div class="logo">PatternHouse Database</div>
+        </div>
+        <div class="right">
+            <a href="https://patternhouse.openaod.org/portal/"><div>PatternHouse DB</div></a>
+            <a href="https://patternhouse.openaod.org"><div>PatternHouse Website</div></a>
+            <a href="https://openaod.org"><div>openAOD</div></a>
+            <a href="https://openaod.org/about"><div>About</div></a>
+        </div>
+        <div class="right-mobile">
+            <div class="img"><img src="../../img/hamburger.svg" alt="left_arrow"/></div>
+        </div>
+    </div>
+</header>
+
+<div class="main-container">
+
+    <section class="left">
+
+        <div class="top">
+            <div class="header">
+                <div class="heading">Navigator</div>
+            </div>
+            <div class="showcase">
+                <img src="../../patterns/numeric/numericpattern277.PNG" alt="pattern_image">
+            </div>
+            <div class="description">
+                Pattern Name: Numeric Pattern 277 <br>
+                Group Name: Numeric Patterns
+            </div>
+            <div class="spacer"></div>
+            <div class="badges-container">
+                <a href="#c"><div class="active ">C</div></a>
+                <a href="#cpp"><div class="active ">C++</div></a>
+                <a href="#cs"><div class="active inactive">C#</div></a>
+                <a href="#java"><div class="active ">Java</div></a>
+                <a href="#py"><div class="active ">Python</div></a>
+            </div>
+            <div class="navigation">
+                <a href="Numeric Pattern 276.html">
+                    <div class="left ">
+                        <div class="icon"><img src="../../img/left-nav.svg" alt="left_icon"></div>
+                        <div class="text">
+                            <div class="head">Last Pattern</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Numeric Pattern 278.html">
+                    <div class="right ">
+                        <div class="text">
+                            <div class="head">Next Pattern</div>
+                        </div>
+                        <div class="icon"><img src="../../img/right-nav.svg" alt="left_icon"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="head">Debug Info</div>
+            <div class="text">
+                Build ID: openAOD FIRE v1.2 Final Release Candidate <br>
+                Build Date: 2022-10-14 <br>
+                Fire Version: openaod-fire-v1.2frc
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="right">
+        <div class="h1">Numeric Pattern 277</div>
+
+        <div class="h2" id="c">C</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>numericpattern277.c</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/C-PatternHouse/blob/main/Numeric Patterns/numericpattern277.c">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/C-PatternHouse/raw/main/Numeric Patterns/numericpattern277.c" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int n = 4, x = 1, y, sum = n*(n+1);
+    for(int i = 1; i &lt;= n; i++) {
+        y = sum - n + i;
+        for(int j = 1; j &lt;= n*2; j++) {
+            if(j &gt; 2*(i - 1)) {
+                if(j &lt;= (n*2)/2+i-1)
+                    printf("%2d ", x++);
+                else
+                    printf("%2d ", y++);
+            }
+            else
+                printf("   ");
+        }
+        sum = sum - n + i - 1;
+        printf("\n");
+    }
+    return 0;
+}
+
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2" id="cpp">C++</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>numericpattern277.cpp</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/CPlusPlus-PatternHouse/blob/main/Numeric Patterns/numericpattern277.cpp">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/CPlusPlus-PatternHouse/raw/main/Numeric Patterns/numericpattern277.cpp" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-cpp">
+#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main()
+{
+    int n = 4, x = 1, y, sum = n *(n+1);
+    for(int i = 1; i &lt;= n; i++) {
+        y = sum - n + i;
+        for(int j = 1; j &lt;= n*2; j++) {
+            if(j &gt; 2*(i - 1)) {
+                if(j &lt;= (n*2)/2+i-1)
+                    cout &lt;&lt; setw(3) &lt;&lt; x++;
+                else
+                    cout &lt;&lt; setw(3) &lt;&lt; y++;
+            }
+            else
+                cout &lt;&lt; setw(3) &lt;&lt; " ";
+        }
+        sum = sum - n + i - 1;
+        cout &lt;&lt; endl;
+    }
+    return 0;
+}
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2" id="py">Python</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>numericpattern277.py</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/Python-PatternHouse/blob/main/Numeric Patterns/numericpattern277.py">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/Python-PatternHouse/raw/main/Numeric Patterns/numericpattern277.py" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-py">
+height = int(input())
+x = 1
+sum = height*(height+1)
+
+for i in range(1,height+1):
+    y = sum - height + i
+
+    for j in range(1,height*2+1):
+        
+        if(j &gt; 2*(i-1)):
+        
+            if(j &lt;= (height*2)//2+i-1):
+            
+                if(x &lt;= 9):
+                    print("",x,end=" ")
+
+                else:
+                    print(x,end=" ")
+                    
+                x += 1
+
+            else:
+                if(y &lt;= 9):
+                    print("",y,end=" ")
+
+                else:
+                    print(y,end=" ")
+                    
+                y += 1
+                    
+        else:
+            print(end="   ")
+
+    sum = sum - height + i - 1
+    print()
+    
+# Sample Input :- 4
+# Output :-
+# 1  2  3  4 17 18 19 20 
+#       5  6  7 14 15 16 
+#             8  9 12 13 
+#                  10 11 
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2" id="java">Java</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>numericpattern277.java</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/Java-PatternHouse/blob/main/Numeric Patterns/numericpattern277.java">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/Java-PatternHouse/raw/main/Numeric Patterns/numericpattern277.java" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-java">
+import java.util.Scanner;
+
+public class NumericPattern277 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int height = s.nextInt(); // Input height of the pattern
+        int x = 1, y, sum = height*(height+1);
+        
+        for (int i = 1; i &lt;= height; i++) {
+            y = sum-height+i;
+        
+            for (int j = 1; j &lt;= height*2; j++) {
+                
+                if(j &gt; 2*(i-1)) {
+                    if( j &lt;= (height*2)/2+i-1) {
+                        if(x &lt;= 9) {
+                            System.out.print(" " + x++ + " ");
+                        }
+                        else {
+                            System.out.print(x++ + " ");
+                        }
+                    }
+                    else {
+                        if(y &lt;= 9) {
+                            System.out.print(" " + y++ + " ");
+                        }
+                        else {
+                            System.out.print(y++ + " ");
+                        }
+                    }  
+                }
+                else {
+                    System.out.print("   ");
+                }
+            }
+            sum = sum - height + i - 1;
+            System.out.println();
+        }
+    }
+}
+
+// Sample Input :- 4
+// Output :-
+// 1  2  3  4 17 18 19 20
+//       5  6  7 14 15 16
+//             8  9 12 13
+//                  10 11
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info ">
+            <div class="icon"><img src="../../img/info-icon.svg" alt="info_icon"></div>
+            <div class="text">We are currently awaiting contributions for this pattern for the language(s): C#. <br> Please visit our GitHub page if you would like to contribute.</div>
+        </div>
+
+        <a href="#top"><div class="bottom-nav"> Back to Top </div></a>
+    </section>
+
+</div>
+
+<script src="../../js/prism.js"></script>
+
+<footer>
+    <div class="container">
+        <div class="left">
+            <div class="heading">PatternHouse Database</div>
+            <div class="description">Copyright &copy 2022, openAOD</div>
+        </div>
+        <div class="right">
+            <a href="https://vercel.com/?utm_source=openaod"><div class="sponsor-note">Powered by Vercel</div></a>
+        </div>
+    </div>
+</footer>
+
+</html>
