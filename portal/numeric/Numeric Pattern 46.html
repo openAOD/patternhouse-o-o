@@ -39,7 +39,7 @@
                 <div class="heading">Navigator</div>
             </div>
             <div class="showcase">
-                <img src="../../patterns/numeric/46.PNG" alt="pattern_image">
+                <img src="../../patterns/numeric/numericpattern46.PNG" alt="pattern_image">
             </div>
             <div class="description">
                 Pattern Name: Numeric Pattern 46 <br>
@@ -47,10 +47,10 @@
             </div>
             <div class="spacer"></div>
             <div class="badges-container">
-                <a href="#c"><div class="active inactive">C</div></a>
-                <a href="#cpp"><div class="active inactive">C++</div></a>
+                <a href="#c"><div class="active ">C</div></a>
+                <a href="#cpp"><div class="active ">C++</div></a>
                 <a href="#cs"><div class="active inactive">C#</div></a>
-                <a href="#java"><div class="active inactive">Java</div></a>
+                <a href="#java"><div class="active ">Java</div></a>
                 <a href="#py"><div class="active inactive">Python</div></a>
             </div>
             <div class="navigation">
@@ -87,10 +87,200 @@
     <section class="right">
         <div class="h1">Numeric Pattern 46</div>
 
+        <div class="h2" id="c">C</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>numericpattern46.c</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/C-PatternHouse/blob/main/Numeric Patterns/numericpattern46.c">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/C-PatternHouse/raw/main/Numeric Patterns/numericpattern46.c" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int n = 5, x;
+    for(int i = 1; i &lt;= n; i++) {
+        x = i;
+        for(int j = 1; j &lt;= i; j++) {
+            printf("%d ", x);
+            x = x + (n - j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2" id="cpp">C++</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>numericpattern46.cpp</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/CPlusPlus-PatternHouse/blob/main/Numeric Patterns/numericpattern46.cpp">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/CPlusPlus-PatternHouse/raw/main/Numeric Patterns/numericpattern46.cpp" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-cpp">
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    vector&lt;int&gt; arr[5];
+    int c = 1;
+    for (int i = 5; i &gt;= 1; i--)
+    {
+        for (int j = 0; j &lt; i; j++)
+        {
+            arr[j + 5 - i].push_back(c);
+            c++;
+        }
+    }
+    for (int i = 0; i &lt; 5; i++)
+    {
+        for (int j = 0; j &lt;= arr[i].size() - 1; j++)
+        {
+            cout &lt;&lt; arr[i][j] &lt;&lt; " ";
+        }
+        cout &lt;&lt; endl;
+    }
+
+    return 0;
+}
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2" id="java">Java</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>numericpattern46.java</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/Java-PatternHouse/blob/main/Numeric Patterns/numericpattern46.java">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/Java-PatternHouse/raw/main/Numeric Patterns/numericpattern46.java" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-java">
+/**
+ * pattern to be printed 
+ * 
+ *   1
+ *   2 6
+ *   3 7 10
+ *   4 8 11 13
+ *   5 9 12 14 15
+ * numericpattern46
+ * 
+ */
+public class numericpattern46{
+    public static void main(String[] args) {
+        int rows = 5;
+       numericPattern(rows);
+    }
+    private static void numericPattern(int n) {
+
+        for (int i = 1; i &lt;= n; i++) {
+            int c=0;
+            for (int j = 1; j &lt;= i; j++) {
+              System.out.print(i+c+"  "); 
+              c+=n-j;
+            }
+            System.out.println();
+        }
+    }  
+}
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="info ">
             <div class="icon"><img src="../../img/info-icon.svg" alt="info_icon"></div>
-            <div class="text">We are currently awaiting contributions for this pattern for the language(s): C C++ C# Python Java JavaScript. <br> Please visit our GitHub page if you would like to contribute.</div>
+            <div class="text">We are currently awaiting contributions for this pattern for the language(s): C# Python JavaScript. <br> Please visit our GitHub page if you would like to contribute.</div>
         </div>
 
         <a href="#top"><div class="bottom-nav"> Back to Top </div></a>

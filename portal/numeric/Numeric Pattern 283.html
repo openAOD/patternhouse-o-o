@@ -39,7 +39,7 @@
                 <div class="heading">Navigator</div>
             </div>
             <div class="showcase">
-                <img src="../../patterns/numeric/283.PNG" alt="pattern_image">
+                <img src="../../patterns/numeric/numericpattern283.PNG" alt="pattern_image">
             </div>
             <div class="description">
                 Pattern Name: Numeric Pattern 283 <br>
@@ -47,11 +47,11 @@
             </div>
             <div class="spacer"></div>
             <div class="badges-container">
-                <a href="#c"><div class="active inactive">C</div></a>
-                <a href="#cpp"><div class="active inactive">C++</div></a>
+                <a href="#c"><div class="active ">C</div></a>
+                <a href="#cpp"><div class="active ">C++</div></a>
                 <a href="#cs"><div class="active inactive">C#</div></a>
-                <a href="#java"><div class="active inactive">Java</div></a>
-                <a href="#py"><div class="active inactive">Python</div></a>
+                <a href="#java"><div class="active ">Java</div></a>
+                <a href="#py"><div class="active ">Python</div></a>
             </div>
             <div class="navigation">
                 <a href="Numeric Pattern 282.html">
@@ -87,10 +87,290 @@
     <section class="right">
         <div class="h1">Numeric Pattern 283</div>
 
+        <div class="h2" id="c">C</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>numericpattern283.c</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/C-PatternHouse/blob/main/Numeric Patterns/numericpattern283.c">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/C-PatternHouse/raw/main/Numeric Patterns/numericpattern283.c" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int n = 5, x = 1;
+    for(int i = 1; i &lt;= n; i++) {
+        for(int j = 1; j &lt;= x; j++) {
+            if(i != n/2 + 1)
+                printf("* ");
+            else
+                printf("%d ", j);
+        }
+        if(i &lt;= n/2)
+            x++;
+        else
+            x--;
+            
+        printf("\n");
+    }
+    return 0;
+}
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2" id="cpp">C++</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>numericpattern283.cpp</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/CPlusPlus-PatternHouse/blob/main/Numeric Patterns/numericpattern283.cpp">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/CPlusPlus-PatternHouse/raw/main/Numeric Patterns/numericpattern283.cpp" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-cpp">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    
+    int size=5;
+    int flag=size/2;;
+    
+    for(int i=0; i&lt;size;i++){
+        
+        //Middle row of numbers
+        if(i==size/2){
+            for(int j=1;j&lt;4;j++)
+                cout&lt;&lt;j&lt;&lt;" ";
+            cout&lt;&lt;endl;
+        }
+        
+        //Upper half of stars
+        else if(i&lt;size/2){
+            for(int j=0;j&lt;=i;j++)
+                cout&lt;&lt;"*"&lt;&lt;" ";
+            cout&lt;&lt;endl;
+        }
+        
+        //Lower half of stars
+        else{
+            for(int j=0;j&lt;flag;j++)
+                cout&lt;&lt;"*"&lt;&lt;" ";
+            flag--;
+            cout&lt;&lt;endl;
+        }
+        
+    }
+    
+    return 0;
+}
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2" id="py">Python</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>numericpattern283.py</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/Python-PatternHouse/blob/main/Numeric Patterns/numericpattern283.py">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/Python-PatternHouse/raw/main/Numeric Patterns/numericpattern283.py" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-py">
+height = int(input())
+x = 1
+
+for i in range(1,height+1):
+
+    for j in range(1,x+1):
+    
+        if(i != height//2+1):
+            print("*",end=" ")
+        
+        else:
+            print(j,end=" ")
+            
+    if(i &lt; height//2+1):
+        x += 1
+    else:
+        x -= 1
+    
+    print()
+    
+# Sample Input :- 5
+# Output :-
+# *
+# * *
+# 1 2 3
+# * *
+# *
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2" id="java">Java</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>numericpattern283.java</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/Java-PatternHouse/blob/main/Numeric Patterns/numericpattern283.java">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/Java-PatternHouse/raw/main/Numeric Patterns/numericpattern283.java" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-java">
+public class Main
+{
+    public static void main(String[] args) {
+		
+    int size=5;
+    int flag=size/2;;
+
+    for(int i=0; i&lt;size;i++){
+
+        //Middle row of numbers
+        if(i==size/2){
+            for(int j=1;j&lt;4;j++)
+                System.out.print(j+" ");
+             System.out.println();
+        }
+
+        //Upper half of stars
+        else if(i&lt;size/2){
+            for(int j=0;j&lt;=i;j++)
+                 System.out.print("*"+" ");
+            System.out.println();
+        }
+
+        //Lower half of stars
+        else{
+            for(int j=0;j&lt;flag;j++)
+                System.out.print("*"+" ");
+            flag--;
+            System.out.println();
+        }
+
+    }
+  
+	}
+}
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="info ">
             <div class="icon"><img src="../../img/info-icon.svg" alt="info_icon"></div>
-            <div class="text">We are currently awaiting contributions for this pattern for the language(s): C C++ C# Python Java JavaScript. <br> Please visit our GitHub page if you would like to contribute.</div>
+            <div class="text">We are currently awaiting contributions for this pattern for the language(s): C# JavaScript. <br> Please visit our GitHub page if you would like to contribute.</div>
         </div>
 
         <a href="#top"><div class="bottom-nav"> Back to Top </div></a>
