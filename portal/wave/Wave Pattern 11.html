@@ -50,7 +50,7 @@
                 <a href="#c"><div class="active ">C</div></a>
                 <a href="#cpp"><div class="active ">C++</div></a>
                 <a href="#cs"><div class="active inactive">C#</div></a>
-                <a href="#java"><div class="active inactive">Java</div></a>
+                <a href="#java"><div class="active ">Java</div></a>
                 <a href="#py"><div class="active ">Python</div></a>
                 <a href="#js"><div class="active inactive">JavaScript</div></a>
             </div>
@@ -78,7 +78,7 @@
             <div class="head">Debug Info</div>
             <div class="text">
                 Build ID: openAOD FIRE v1.2 Final Release Candidate <br>
-                Build Date: 2022-10-18 <br>
+                Build Date: 2022-10-19 <br>
                 Fire Version: openaod-fire-v1.2frc
             </div>
         </div>
@@ -268,10 +268,84 @@ for x in range(0, wH + 1):
                 </div>
             </div>
         </div>
+        <div class="h2" id="java">Java</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>wavepattern11.java</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/Java-PatternHouse/blob/main/Wave Patterns/wavepattern11.java">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/Java-PatternHouse/raw/main/Wave Patterns/wavepattern11.java" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-java">
+class GlobalMembersNew5
+{
+   public static void main(String args[])
+   {
+    int wH = 4; //wave height-&gt; change value to increase or decrease the height of wave
+
+
+    int wL = 4; //wave length-&gt;change value to increase or decrease the length of wave
+
+
+    int x = wH - 1; //if cond for printing
+
+
+
+    for (int i = 0;i &lt;= wH;i++)
+    {
+     for (int j = 0;j &lt; wH * wL * 2;j++)
+     {
+
+        if (j % (wH * 2) == x || j % (wH * 2) == wH + i)
+        {
+        System.out.printf("%02d",j);
+        }
+        else
+        {
+         System.out.print(" ");
+        }
+     }
+       x--;
+     System.out.println();
+    }
+   
+   }
+}
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="info ">
             <div class="icon"><img src="../../img/info-icon.svg" alt="info_icon"></div>
-            <div class="text">We are currently awaiting contributions for this pattern for the language(s): C# Java JavaScript. <br> Please visit our GitHub page if you would like to contribute.</div>
+            <div class="text">We are currently awaiting contributions for this pattern for the language(s): C# JavaScript. <br> Please visit our GitHub page if you would like to contribute.</div>
         </div>
 
         <a href="#top"><div class="bottom-nav"> Back to Top </div></a>
