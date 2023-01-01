@@ -39,7 +39,7 @@
                 <div class="heading">Navigator</div>
             </div>
             <div class="showcase">
-                <img src="https://cdn.openaod.org/assets/img/patterns/symbol/88.webp" alt="pattern_image">
+                <img src="https://cdn.openaod.org/assets/img/patterns/symbol/symbolpattern88.webp" alt="pattern_image">
             </div>
             <div class="description">
                 Pattern Name: Symbol Pattern 88 <br>
@@ -47,11 +47,11 @@
             </div>
             <div class="spacer"></div>
             <div class="badges-container">
-                <a href="#c"><div class="active inactive">C</div></a>
-                <a href="#cpp"><div class="active inactive">C++</div></a>
+                <a href="#c"><div class="active ">C</div></a>
+                <a href="#cpp"><div class="active ">C++</div></a>
                 <a href="#cs"><div class="active inactive">C#</div></a>
-                <a href="#java"><div class="active inactive">Java</div></a>
-                <a href="#py"><div class="active inactive">Python</div></a>
+                <a href="#java"><div class="active ">Java</div></a>
+                <a href="#py"><div class="active ">Python</div></a>
                 <a href="#js"><div class="active inactive">JavaScript</div></a>
             </div>
             <div class="navigation">
@@ -78,7 +78,7 @@
             <div class="head">Debug Info</div>
             <div class="text">
                 Build ID: openAOD FIRE v1.0.0 <br>
-                Build Date: 2022-12-25 <br>
+                Build Date: 2023-01-01 <br>
                 Fire Version: openaod-fire-v1.0.0-stable
             </div>
         </div>
@@ -88,10 +88,256 @@
     <section class="right">
         <div class="h1">Symbol Pattern 88</div>
 
+        <div class="h2" id="c">C</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>symbolpattern88.c</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/C-PatternHouse/blob/main/Symbol Patterns/symbolpattern88.c">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/C-PatternHouse/raw/main/Symbol Patterns/symbolpattern88.c" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int n = 7, x = 1;
+    for(int i = 1; i &lt;= n; i++) {
+        for(int j = 1; j &lt;= n; j++) {
+            if(j == x)
+                printf("* ");
+            else 
+                printf("  ");
+        }
+        if(i &lt;= n/2)
+            x++;
+        else
+            x--;
+        printf("\n");
+    }
+    return 0;
+}
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2" id="cpp">C++</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>symbolpattern88.cpp</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/CPlusPlus-PatternHouse/blob/main/Symbol Patterns/symbolpattern88.cpp">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/CPlusPlus-PatternHouse/raw/main/Symbol Patterns/symbolpattern88.cpp" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-cpp">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int n = 7;
+    for(int i = 1; i &lt;= n; i++) {
+        for(int j = 1; j &lt;= n/2 + 1; j++) {
+            if(i == j || i + j == n + 1)
+                cout &lt;&lt; "*";
+            else
+                cout &lt;&lt; "  ";
+        }
+        cout &lt;&lt; endl;
+    }
+    return 0;
+}
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2" id="py">Python</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>symbolpattern88.py</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/Python-PatternHouse/blob/main/Symbol Patterns/symbolpattern88.py">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/Python-PatternHouse/raw/main/Symbol Patterns/symbolpattern88.py" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-py">
+height = int(input())
+x = 1
+
+for i in range(1,height+1):
+
+    for j in range(1,height+1):
+    
+        if(j == x):
+            print("*",end=" ")
+        
+        else:
+            print(end="  ")
+        
+    if(i &lt;= height//2):
+        x += 1
+    else:
+        x -= 1
+        
+    print()
+    
+# Sample Input :- 7
+# Output :-
+# *
+#   *
+#     *
+#       *
+#     *
+#   *
+# *
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2" id="java">Java</div>
+        <div class="code-container">
+            <div class="header">
+                <div class="left">
+                    <div class="filename">
+                        <img src="../../img/source.svg" alt="source_icon">
+                        <div>symbolpattern88.java</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://github.com/openAOD/Java-PatternHouse/blob/main/Symbol Patterns/symbolpattern88.java">
+                        <div class="nav">
+                            <img src="../../img/github-icon.svg" alt="github_icon">
+                            <div>GitHub</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openAOD/Java-PatternHouse/raw/main/Symbol Patterns/symbolpattern88.java" download>
+                        <div class="nav">
+                            <img src="../../img/cloud-download.svg" alt="download_icon">
+                            <div>Download</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+            <pre class="line-numbers"><code class="language-java">
+class symbolpattern {
+
+    public static void main(String []args) {
+        int n = 7, x = 1;
+        for(int i = 1; i &lt;= n; i++) {
+            for(int j = 1; j &lt;= n; j++) {
+                if(j == x) {
+                    System.out.print("* ");
+                }
+                else {
+                    System.out.print("  ");
+                }
+            }
+            if(i &lt;= n/2)
+                x++;
+            else
+                x--;
+            System.out.println();
+        }    
+    }
+}
+            </code></pre>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <img src="../../img/license.svg" alt="license_icon">
+                    <div class="note">Licensed under MIT</div>
+                </div>
+                <div class="right">
+                    <div class="note">
+                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="info ">
             <div class="icon"><img src="../../img/info-icon.svg" alt="info_icon"></div>
-            <div class="text">We are currently awaiting contributions for this pattern for the language(s): C C++ C# Python Java JavaScript. <br> Please visit our GitHub page if you would like to contribute.</div>
+            <div class="text">We are currently awaiting contributions for this pattern for the language(s): C# JavaScript. <br> Please visit our GitHub page if you would like to contribute.</div>
         </div>
 
         <a href="#top"><div class="bottom-nav"> Back to Top </div></a>
