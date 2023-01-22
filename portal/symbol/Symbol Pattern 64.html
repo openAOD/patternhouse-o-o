@@ -39,7 +39,7 @@
                 <div class="heading">Navigator</div>
             </div>
             <div class="showcase">
-                <img src="https://cdn.openaod.org/assets/img/patterns/symbol/symbolpattern64.webp" alt="pattern_image">
+                <img src="https://cdn.openaod.org/assets/img/patterns/symbol/64.webp" alt="pattern_image">
             </div>
             <div class="description">
                 Pattern Name: Symbol Pattern 64 <br>
@@ -47,11 +47,11 @@
             </div>
             <div class="spacer"></div>
             <div class="badges-container">
-                <a href="#c"><div class="active ">C</div></a>
-                <a href="#cpp"><div class="active ">C++</div></a>
+                <a href="#c"><div class="active inactive">C</div></a>
+                <a href="#cpp"><div class="active inactive">C++</div></a>
                 <a href="#cs"><div class="active inactive">C#</div></a>
-                <a href="#java"><div class="active ">Java</div></a>
-                <a href="#py"><div class="active ">Python</div></a>
+                <a href="#java"><div class="active inactive">Java</div></a>
+                <a href="#py"><div class="active inactive">Python</div></a>
                 <a href="#js"><div class="active inactive">JavaScript</div></a>
             </div>
             <div class="navigation">
@@ -78,7 +78,7 @@
             <div class="head">Debug Info</div>
             <div class="text">
                 Build ID: openAOD FIRE v1.0.0 <br>
-                Build Date: 2023-01-15 <br>
+                Build Date: 2023-01-22 <br>
                 Fire Version: openaod-fire-v1.0.0-stable
             </div>
         </div>
@@ -88,300 +88,10 @@
     <section class="right">
         <div class="h1">Symbol Pattern 64</div>
 
-        <div class="h2" id="c">C</div>
-        <div class="code-container">
-            <div class="header">
-                <div class="left">
-                    <div class="filename">
-                        <img src="../../img/source.svg" alt="source_icon">
-                        <div>symbolpattern64.c</div>
-                    </div>
-                </div>
-                <div class="right">
-                    <a href="https://github.com/openAOD/C-PatternHouse/blob/main/Symbol Patterns/symbolpattern64.c">
-                        <div class="nav">
-                            <img src="../../img/github-icon.svg" alt="github_icon">
-                            <div>GitHub</div>
-                        </div>
-                    </a>
-                    <a href="https://github.com/openAOD/C-PatternHouse/raw/main/Symbol Patterns/symbolpattern64.c" download>
-                        <div class="nav">
-                            <img src="../../img/cloud-download.svg" alt="download_icon">
-                            <div>Download</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="middle">
-            <pre class="line-numbers"><code class="language-c">
-#include &lt;stdio.h&gt;
-
-int main()
-{
-
-    for (int i = 5; i &gt;= 1; i--)
-    {
-        for (int j = 1; j &lt;= (5 - i); j++)
-        {
-            printf(" ");
-        }
-        for (int j = 1; j &lt;= i; j++)
-        {
-            if (i % 2 == 0)
-            {
-                printf("* ");
-            }
-            else
-            {
-                printf("# ");
-            }
-        }
-        printf("\n");
-    }
-
-    return 0;
-}
-            </code></pre>
-            </div>
-            <div class="footer">
-                <div class="left">
-                    <img src="../../img/license.svg" alt="license_icon">
-                    <div class="note">Licensed under MIT</div>
-                </div>
-                <div class="right">
-                    <div class="note">
-                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="h2" id="cpp">C++</div>
-        <div class="code-container">
-            <div class="header">
-                <div class="left">
-                    <div class="filename">
-                        <img src="../../img/source.svg" alt="source_icon">
-                        <div>symbolpattern64.cpp</div>
-                    </div>
-                </div>
-                <div class="right">
-                    <a href="https://github.com/openAOD/CPlusPlus-PatternHouse/blob/main/Symbol Patterns/symbolpattern64.cpp">
-                        <div class="nav">
-                            <img src="../../img/github-icon.svg" alt="github_icon">
-                            <div>GitHub</div>
-                        </div>
-                    </a>
-                    <a href="https://github.com/openAOD/CPlusPlus-PatternHouse/raw/main/Symbol Patterns/symbolpattern64.cpp" download>
-                        <div class="nav">
-                            <img src="../../img/cloud-download.svg" alt="download_icon">
-                            <div>Download</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="middle">
-            <pre class="line-numbers"><code class="language-cpp">
-#include&lt;iostream&gt;
-#include&lt;strings.h&gt;
-
-using namespace std;
-
-void printPattern (int totalLines)
-{
-      string evenLine = "* "; // token for even-numbered line
-      string oddLine = "# "; // token for odd-numbered line
-      string s;
-      int i, j;
-
-      for ( i = totalLines; i &gt;= 1; i--)
-      {
-            for ( j = 0; j &lt; totalLines - i; j++) //intial whitespace
-            {
-                  cout &lt;&lt; " ";
-            }
-
-            s = i % 2 == 0? evenLine : oddLine; //string token to be printed this line
-            for ( j = 0; j &lt; i; j++)
-            {
-                  cout &lt;&lt; s;
-            }
-
-            for ( j = 0; j &lt; totalLines - i; j++) //final whitespace
-            {
-                  cout &lt;&lt; " ";
-            }
-
-            cout &lt;&lt; "\n";
-      }
-
-}
-
-int main()
-{
-      int totalLines;
-
-      cout &lt;&lt; "\nHow many lines do you want to be printed?\n";
-      cin &gt;&gt; totalLines;
-
-      cout &lt;&lt; "\nYour pattern looks like this :\n";
-      printPattern(totalLines);
-
-      cout &lt;&lt; "\n";
-      return 0;
-}
-            </code></pre>
-            </div>
-            <div class="footer">
-                <div class="left">
-                    <img src="../../img/license.svg" alt="license_icon">
-                    <div class="note">Licensed under MIT</div>
-                </div>
-                <div class="right">
-                    <div class="note">
-                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="h2" id="py">Python</div>
-        <div class="code-container">
-            <div class="header">
-                <div class="left">
-                    <div class="filename">
-                        <img src="../../img/source.svg" alt="source_icon">
-                        <div>symbolpattern64.py</div>
-                    </div>
-                </div>
-                <div class="right">
-                    <a href="https://github.com/openAOD/Python-PatternHouse/blob/main/Symbol Patterns/symbolpattern64.py">
-                        <div class="nav">
-                            <img src="../../img/github-icon.svg" alt="github_icon">
-                            <div>GitHub</div>
-                        </div>
-                    </a>
-                    <a href="https://github.com/openAOD/Python-PatternHouse/raw/main/Symbol Patterns/symbolpattern64.py" download>
-                        <div class="nav">
-                            <img src="../../img/cloud-download.svg" alt="download_icon">
-                            <div>Download</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="middle">
-            <pre class="line-numbers"><code class="language-py">
-height = int(input())
-
-for i in range(height,0,-1):
-
-    for j in range(1,height-i+1):
-    
-        print(end=" ")
-    
-    for j in range(1,i+1):
-    
-        if(i%2 == 0):
-            print("*",end=" ")
-        
-        else:
-            print("#",end=" ")
-             
-    print()
-    
-# Sample Input :- 5
-# Output :-
-# # # # # #
-#  * * * *
-#   # # #
-#    * *
-#     #
-            </code></pre>
-            </div>
-            <div class="footer">
-                <div class="left">
-                    <img src="../../img/license.svg" alt="license_icon">
-                    <div class="note">Licensed under MIT</div>
-                </div>
-                <div class="right">
-                    <div class="note">
-                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="h2" id="java">Java</div>
-        <div class="code-container">
-            <div class="header">
-                <div class="left">
-                    <div class="filename">
-                        <img src="../../img/source.svg" alt="source_icon">
-                        <div>symbolpattern64.java</div>
-                    </div>
-                </div>
-                <div class="right">
-                    <a href="https://github.com/openAOD/Java-PatternHouse/blob/main/Symbol Patterns/symbolpattern64.java">
-                        <div class="nav">
-                            <img src="../../img/github-icon.svg" alt="github_icon">
-                            <div>GitHub</div>
-                        </div>
-                    </a>
-                    <a href="https://github.com/openAOD/Java-PatternHouse/raw/main/Symbol Patterns/symbolpattern64.java" download>
-                        <div class="nav">
-                            <img src="../../img/cloud-download.svg" alt="download_icon">
-                            <div>Download</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="middle">
-            <pre class="line-numbers"><code class="language-java">
-/**
- * pattern to be printed 
- * 
-     # # # # #
-      * * * *
-       # # #
-        * *
-         #
- * symbolpattern64
- */
-class symbolpattern64 {
-    public static void main(String[] args) {
-        int rows = 5;
-        symbolPattern(rows);
-    }
-    private static void symbolPattern(int n) {
-        for (int i = 1; i &lt;= n; i++) {
-            for (int j = 0; j &lt;i; j++) {
-             System.out.print("  ");
-            }
-            for (int j = 0; j &lt;=n-i; j++) {
-                if (i%2!=0)  System.out.print("#  ");
-                else  System.out.print("*  ");
-            }
-            
-            System.out.println();
-            }
-        }
-    }
-        
-            </code></pre>
-            </div>
-            <div class="footer">
-                <div class="left">
-                    <img src="../../img/license.svg" alt="license_icon">
-                    <div class="note">Licensed under MIT</div>
-                </div>
-                <div class="right">
-                    <div class="note">
-                        Syntax highlighting powered by <a href="https://prismjs.com">PrismJS</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="info ">
             <div class="icon"><img src="../../img/info-icon.svg" alt="info_icon"></div>
-            <div class="text">We are currently awaiting contributions for this pattern for the language(s): C# JavaScript. <br> Please visit our GitHub page if you would like to contribute.</div>
+            <div class="text">We are currently awaiting contributions for this pattern for the language(s): C C++ C# Python Java JavaScript. <br> Please visit our GitHub page if you would like to contribute.</div>
         </div>
 
         <a href="#top"><div class="bottom-nav"> Back to Top </div></a>
